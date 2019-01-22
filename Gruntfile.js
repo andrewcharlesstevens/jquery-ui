@@ -156,6 +156,7 @@ grunt.initConfig({
 				baseUrl: "./",
 				paths: {
 					jquery: "./external/jquery/jquery",
+ 					pep: "./external/pep/pep",
 					external: "./external/"
 				},
 				preserveLicenseComments: false,
@@ -279,6 +280,9 @@ grunt.initConfig({
 
 				"jshint/jshint.js": "jshint/dist/jshint.js",
 				"jshint/LICENSE": "jshint/LICENSE",
+
+				"pep/pep.js": "pepjs/dist/pep.js",
+				"pep/LICENSE.txt": "pepjs/LICENSE.txt",
 
 				"jquery/jquery.js": "jquery-1.x/dist/jquery.js",
 				"jquery/LICENSE.txt": "jquery-1.x/LICENSE.txt",

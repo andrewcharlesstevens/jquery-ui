@@ -163,14 +163,14 @@ $.widget( "ui.resizable", $.ui.mouse, {
 
 		if ( o.autoHide ) {
 			$( this.element )
-				.on( "mouseenter", function() {
+				.on( "pointerenter", function() {
 					if ( o.disabled ) {
 						return;
 					}
 					that._removeClass( "ui-resizable-autohide" );
 					that._handles.show();
 				} )
-				.on( "mouseleave", function() {
+				.on( "pointerleave", function() {
 					if ( o.disabled ) {
 						return;
 					}
@@ -289,7 +289,7 @@ $.widget( "ui.resizable", $.ui.mouse, {
 					this.handles[ i ] = this.element.children( this.handles[ i ] ).first().show();
 				} else if ( this.handles[ i ].jquery || this.handles[ i ].nodeType ) {
 					this.handles[ i ] = $( this.handles[ i ] );
-					this._on( this.handles[ i ], { "mousedown": that._mouseDown } );
+					this._on( this.handles[ i ], { "pointerdown": that._mouseDown } );
 				}
 
 				if ( this.elementIsWrapper &&
@@ -322,7 +322,7 @@ $.widget( "ui.resizable", $.ui.mouse, {
 		this._handles = this._handles.add( this.element.find( ".ui-resizable-handle" ) );
 		this._handles.disableSelection();
 
-		this._handles.on( "mouseover", function() {
+		this._handles.on( "pointerover", function() {
 			if ( !that.resizing ) {
 				if ( this.className ) {
 					axis = this.className.match( /ui-resizable-(se|sw|ne|nw|n|e|s|w)/i );

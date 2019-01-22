@@ -16,16 +16,16 @@ QUnit.test( "mouse based interaction", function( assert ) {
 	var element = $( "#slider1" )
 		.slider( {
 			start: function( event ) {
-				assert.equal( event.originalEvent.type, "mousedown", "start triggered by mousedown" );
+				assert.equal( event.originalEvent.type, "pointerdown", "start triggered by pointerdown" );
 			},
 			slide: function( event ) {
-				assert.equal( event.originalEvent.type, "mousemove", "slider triggered by mousemove" );
+				assert.equal( event.originalEvent.type, "pointermove", "slider triggered by pointermove" );
 			},
 			stop: function( event ) {
-				assert.equal( event.originalEvent.type, "mouseup", "stop triggered by mouseup" );
+				assert.equal( event.originalEvent.type, "pointerup", "stop triggered by pointerup" );
 			},
 			change: function( event ) {
-				assert.equal( event.originalEvent.type, "mouseup", "change triggered by mouseup" );
+				assert.equal( event.originalEvent.type, "pointerup", "change triggered by pointerup" );
 			}
 		} );
 
