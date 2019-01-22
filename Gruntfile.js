@@ -238,6 +238,8 @@ grunt.initConfig({
 				"jshint/jshint.js": "jshint/dist/jshint.js",
 				"jshint/LICENSE": "jshint/LICENSE",
 
+				"pep/pep.js": "pepjs/dist/pep.js",
+
 				"jquery/jquery.js": "jquery-1.x/jquery.js",
 				"jquery/MIT-LICENSE.txt": "jquery-1.x/MIT-LICENSE.txt",
 
