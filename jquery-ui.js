@@ -852,7 +852,7 @@ return $.widget;
 		// AMD. Register as an anonymous module.
 		define([
 			"jquery",
-			"pep",
+			"jquery-pep",
 			"./widget"
 		], factory );
 	} else {
